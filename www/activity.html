@@ -1,0 +1,24 @@
+<!doctype HTML>
+<!-- Copyright (C) 2021 Justyna Grunwald, Aleksander Zioło. All Rights Reserved -->
+<html>
+<head>
+    <title>Wyniki symulacji</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='{{ url_for('static',filename='activity.css') }}'>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="title">Wyniki symulacji dla profilu: {{nazwa}}</div>
+            <div class="desc">Parametry symulacji: {{temp}}&#176;C, {{czas}} min, Uchylenie: {{vent}}</div>
+        </div>
+    <div class="wykres" id="wykres">
+        <script>
+            var dane = {{plot | safe}};
+            Plotly.react('wykres', dane.data, dane.layout);
+        </script>
+    </div>
+    </div>
+</body>
+</html>

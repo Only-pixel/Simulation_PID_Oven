@@ -1,0 +1,35 @@
+body{
+    font-family: Segoe UI;
+    background: #E7EDF8;  /* fallback for old browsers */
+    background: linear-gradient(to right, #E7EDF8, #A5AFCA);
+}
+
+.page{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.wykres{
+    height:600px;
+    border:2px solid black;
+}
+
+.title{
+    font-size:28px;
+    margin-top:10px;
+    font-family: Segoe UI;
+    margin-bottom:10px;
+    float:left;
+    width:48%;
+}
+
+.desc{
+    font-size:16px;
+    margin-top:25px;
+    font-family: Segoe UI;
+    margin-bottom:10px;
+    float:right;
+    width:48%;
+    text-align:right;
+}

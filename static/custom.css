@@ -1,0 +1,39 @@
+body{
+    font-family: Segoe UI;
+    background: #E7EDF8;  /* fallback for old browsers */
+    background: linear-gradient(to right, #E7EDF8, #A5AFCA);
+}
+
+.title{
+    font-size:34px;
+    text-align:center;
+    margin-top:100px;
+    font-weight:bold;
+}
+
+.submitButton{
+    margin:0 auto;
+    display:block;
+    width:220px;
+    height:60px;
+    font-family: Segoe UI;
+    margin-top:30px;
+}
+
+.inputElement{
+    margin:0 auto;
+    display:block;
+    font-family: Segoe UI Light;
+    width:250px;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.textInput{
+    width:250px;
+    font-size:15px;
+}
+
+#otw1{
+    margin-right:60px;
+}

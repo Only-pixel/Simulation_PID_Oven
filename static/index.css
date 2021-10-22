@@ -1,0 +1,66 @@
+body{
+    font-family: Segoe UI;
+    background: #DAE2F8;  /* fallback for old browsers */
+    background: linear-gradient(to right, #D6A4A4, #E7EDF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+}
+
+.modeButton{
+    width:220px;
+    height:220px;
+    padding-top:180px;
+    font-family: Segoe UI;
+    border: 3px solid #3d3d3d;
+    border-radius:5px;
+    background-color: black;
+    font-size:16px;
+}
+
+.title{
+    font-size:38px;
+    text-align:center;
+    margin-top:100px;
+    font-weight:bold;
+}
+
+#btn1{
+    background: url('pizza.png') no-repeat;
+    background-size:contain;
+
+}
+
+#btn2{
+    background: url('kurczak.png') no-repeat;
+    background-size:contain;
+}
+
+#btn3{
+    background: url('brownie.png') no-repeat;
+    background-size:contain;
+}
+
+#btn4{
+    background: url('morela.png') no-repeat;
+    background-size:contain;
+}
+
+#btn5{
+    background: url('custom.png') no-repeat;
+    background-size:contain;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover {
+    transform: scale(1.07);
+    opacity: 0.9;
+    transition: opacity 0.2s, transform 0.2s;
+}

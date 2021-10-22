@@ -1,0 +1,28 @@
+<!doctype HTML>
+<!-- Copyright (C) 2021 Justyna Grunwald, Aleksander Zioło. All Rights Reserved -->
+<html>
+<head>
+    <title>Ustawienia niestandardowe</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='{{ url_for('static',filename='custom.css') }}'>
+</head>
+<body>
+<div class="title">Ustawienia niestandardowe piekarnika</div>
+<div class="main">
+    <form method="post" id="prefs">
+        <div class="inputElement"><label for="temp">Docelowa temperatura (&#176;C):</label><br>
+        <input type="number" id="temp" name="temp" class="textInput" min="50" max="250" value="150"></div>
+        <div class="inputElement"><label for="czas">Czas pieczenia (min.):</label><br>
+        <input type="number" id="czas" name="czas" class="textInput" min="1" max="420" value="60"></div>
+        <div class="inputElement">
+            <label for="otw1">Czas kontrolnego otwarcia drzwi:</label>
+            <input type="number" id="otw1" name="otw1" class="textInput" min="0" max="420" value="0">
+        </div>
+        <div class="inputElement">
+        <input type="checkbox" id="vent" name="vent">
+        <label for="vent">Uchylenie drzwi piekarnika</label></div>
+    <button type="submit" name="submitButton" class="submitButton">Wykonaj</button>
+    </form>
+</div>
+</body>
+</html>

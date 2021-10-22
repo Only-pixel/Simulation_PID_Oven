@@ -1,0 +1,34 @@
+<!doctype HTML>
+<!-- Copyright (C) 2021 Justyna Grunwald, Aleksander Zioło. All Rights Reserved -->
+<html>
+<head>
+    <title>Konfiguracja piekarnika</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='{{ url_for('static',filename='index.css') }}'>
+</head>
+<body>
+<div class="title">Symulator piekarnika - Wybierz profil</div>
+<div class="main">
+    <div>
+    <form method="post" id="op1">
+    <button type="submit" name="op1" class="modeButton" id="btn1">Pizza</button>
+    </form></div>
+    <div>
+    <form method="post" id="op2">
+    <button type="submit" name="op2" class="modeButton" id="btn2">Kurczak</button>
+    </form></div>
+    <div>
+    <form method="post" id="op3">
+    <button type="submit" name="op3" class="modeButton" id="btn3">Ciasto (brownie)</button>
+    </form></div>
+    <div>
+    <form method="post" id="op4">
+    <button type="submit" name="op4" class="modeButton" id="btn4">Suszenie (morele)</button>
+    </form></div>
+    <div>
+    <form method="post" id="op5">
+    <button type="submit" name="op5" class="modeButton" id="btn5">Niestandardowy</button>
+    </form></div>
+</div>
+</body>
+</html>
